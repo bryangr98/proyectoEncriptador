@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="encrip.css">
+    <title>encriptador</title>
+    <link rel="shortcut icon" href="imgen/Vector.png" type="image/x-icon">
+    
+</head>
+<body>
+    <script src="encrip.js"> </script> 
+    <div class="contenedor">
+       
+        <div class="divIzq">
+            <div class="logo">
+                <img src="imgen/Vector.png"  alt="logo">
+            </div>
+            <div class="texto1hijo">
+            <textarea type="text" id="texto1hijo-text" placeholder="(des)encripta tu mensaje aqui!!"  ></textarea>
+            </div>
+
+                <div class="boton">
+                 <input type="submit" value="encriptar" class="encriptar" onclick="encriptarClick()" >
+
+                 <input type="submit" value="desencriptar" class="desencriptar" onclick="desencriptarClick()" >
+                
+            </div>
+            <div class="lista">
+                <ul>
+                <li >❗solo letras minusculas</li>
+                <li > ❗no caracteres especiales</li>
+                <li >❗no compartas el codigo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rectangulo" >
+            <div id="oculto">
+
+                <img src="imgen/Muñeco.png" alt="muñeco">
+            
+                <p>no se encontro el texto</p>
+                <p> ingrese el texto que desea encriptar/desencriptar</p>
+            </div>
+             <div>
+             <textarea type="text" id="text-cambio" style="display: none;"></textarea>
+             </div>
+             <input type="button" value="copiar" id="copiar" style="display: none;" onclick="copy()">
+            </div>
+
+            <div class="contacto">
+            
+                <ul class="contacto">
+                    <li><a href="www.linkedin.com/in/bryan-sebastián-garcía-ramírez-8882a5196">LinkedIn</a></li>
+                    <li><a href="https://github.com/bryangr98"> GitHub</a></li>
+                    
+                </ul>
+
+            </div>
+
+    </div>
+
+</body>
+</html>
